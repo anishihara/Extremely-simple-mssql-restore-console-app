@@ -43,7 +43,7 @@ namespace SqlRestore
                 db.Create();
                 Console.WriteLine("Created {0}.", databaseName);
             }
-            Console.WriteLine("Verifying if backup media...");
+            Console.WriteLine("Verifying backup media...");
             bool valid = restoreDB.SqlVerify(srv);
             if (valid)
             {
